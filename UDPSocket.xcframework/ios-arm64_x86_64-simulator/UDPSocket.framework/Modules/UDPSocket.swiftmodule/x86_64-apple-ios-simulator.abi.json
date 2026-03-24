@@ -1,0 +1,904 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "UDPSocket",
+    "printedName": "UDPSocket",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UDPSocket"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UDPClient",
+        "printedName": "UDPClient",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UDPSocket.UDPClient?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UDPClient",
+                    "printedName": "UDPSocket.UDPClient",
+                    "usr": "s:9UDPSocket9UDPClientC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9UDPSocket9UDPClientC6sharedACSgvpZ",
+            "mangledName": "$s9UDPSocket9UDPClientC6sharedACSgvpZ",
+            "moduleName": "UDPSocket",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UDPSocket.UDPClient?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UDPClient",
+                        "printedName": "UDPSocket.UDPClient",
+                        "usr": "s:9UDPSocket9UDPClientC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9UDPSocket9UDPClientC6sharedACSgvgZ",
+                "mangledName": "$s9UDPSocket9UDPClientC6sharedACSgvgZ",
+                "moduleName": "UDPSocket",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(host:port:account:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UDPClient",
+                "printedName": "UDPSocket.UDPClient",
+                "usr": "s:9UDPSocket9UDPClientC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt16",
+                "printedName": "Swift.UInt16",
+                "usr": "s:s6UInt16V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9UDPSocket9UDPClientC9configure4host4port7accountACSS_s6UInt16VSStFZ",
+            "mangledName": "$s9UDPSocket9UDPClientC9configure4host4port7accountACSS_s6UInt16VSStFZ",
+            "moduleName": "UDPSocket",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9UDPSocket9UDPClientC7connectyyF",
+            "mangledName": "$s9UDPSocket9UDPClientC7connectyyF",
+            "moduleName": "UDPSocket",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9UDPSocket9UDPClientC10disconnectyyF",
+            "mangledName": "$s9UDPSocket9UDPClientC10disconnectyyF",
+            "moduleName": "UDPSocket",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribe",
+            "printedName": "subscribe(handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UDPSocket.UDPReceivableEvent) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UDPReceivableEvent",
+                    "printedName": "UDPSocket.UDPReceivableEvent",
+                    "usr": "s:9UDPSocket18UDPReceivableEventO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9UDPSocket9UDPClientC9subscribe7handleryyAA18UDPReceivableEventOYbScMYcc_tF",
+            "mangledName": "$s9UDPSocket9UDPClientC9subscribe7handleryyAA18UDPReceivableEventOYbScMYcc_tF",
+            "moduleName": "UDPSocket",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAllSubscribers",
+            "printedName": "removeAllSubscribers()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9UDPSocket9UDPClientC20removeAllSubscribersyyF",
+            "mangledName": "$s9UDPSocket9UDPClientC20removeAllSubscribersyyF",
+            "moduleName": "UDPSocket",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(_:cmdDetail:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UDPSendableCommand",
+                "printedName": "UDPSocket.UDPSendableCommand",
+                "usr": "s:9UDPSocket18UDPSendableCommandO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9UDPSocket9UDPClientC4send_9cmdDetailyAA18UDPSendableCommandO_SStF",
+            "mangledName": "$s9UDPSocket9UDPClientC4send_9cmdDetailyAA18UDPSendableCommandO_SStF",
+            "moduleName": "UDPSocket",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9UDPSocket9UDPClientC",
+        "mangledName": "$s9UDPSocket9UDPClientC",
+        "moduleName": "UDPSocket",
+        "intro_Macosx": "10.14",
+        "intro_iOS": "12.0",
+        "intro_tvOS": "12.0",
+        "intro_watchOS": "5.0",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom",
+          "Available",
+          "Available",
+          "Available",
+          "Available",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UDPSocket"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UDPSocket"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UDPSocket"
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "UDPSocket"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UDPSocket"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UDPReceivableEvent",
+        "printedName": "UDPReceivableEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "connected",
+            "printedName": "connected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UDPSocket.UDPReceivableEvent.Type) -> UDPSocket.UDPReceivableEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UDPReceivableEvent",
+                    "printedName": "UDPSocket.UDPReceivableEvent",
+                    "usr": "s:9UDPSocket18UDPReceivableEventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UDPSocket.UDPReceivableEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UDPReceivableEvent",
+                        "printedName": "UDPSocket.UDPReceivableEvent",
+                        "usr": "s:9UDPSocket18UDPReceivableEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9UDPSocket18UDPReceivableEventO9connectedyA2CmF",
+            "mangledName": "$s9UDPSocket18UDPReceivableEventO9connectedyA2CmF",
+            "moduleName": "UDPSocket",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "disconnected",
+            "printedName": "disconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UDPSocket.UDPReceivableEvent.Type) -> UDPSocket.UDPReceivableEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UDPReceivableEvent",
+                    "printedName": "UDPSocket.UDPReceivableEvent",
+                    "usr": "s:9UDPSocket18UDPReceivableEventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UDPSocket.UDPReceivableEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UDPReceivableEvent",
+                        "printedName": "UDPSocket.UDPReceivableEvent",
+                        "usr": "s:9UDPSocket18UDPReceivableEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9UDPSocket18UDPReceivableEventO12disconnectedyA2CmF",
+            "mangledName": "$s9UDPSocket18UDPReceivableEventO12disconnectedyA2CmF",
+            "moduleName": "UDPSocket",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "reconnecting",
+            "printedName": "reconnecting",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UDPSocket.UDPReceivableEvent.Type) -> UDPSocket.UDPReceivableEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UDPReceivableEvent",
+                    "printedName": "UDPSocket.UDPReceivableEvent",
+                    "usr": "s:9UDPSocket18UDPReceivableEventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UDPSocket.UDPReceivableEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UDPReceivableEvent",
+                        "printedName": "UDPSocket.UDPReceivableEvent",
+                        "usr": "s:9UDPSocket18UDPReceivableEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9UDPSocket18UDPReceivableEventO12reconnectingyA2CmF",
+            "mangledName": "$s9UDPSocket18UDPReceivableEventO12reconnectingyA2CmF",
+            "moduleName": "UDPSocket",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sendData",
+            "printedName": "sendData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UDPSocket.UDPReceivableEvent.Type) -> (Swift.String) -> UDPSocket.UDPReceivableEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> UDPSocket.UDPReceivableEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UDPReceivableEvent",
+                        "printedName": "UDPSocket.UDPReceivableEvent",
+                        "usr": "s:9UDPSocket18UDPReceivableEventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(cmdDetail: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UDPSocket.UDPReceivableEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UDPReceivableEvent",
+                        "printedName": "UDPSocket.UDPReceivableEvent",
+                        "usr": "s:9UDPSocket18UDPReceivableEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9UDPSocket18UDPReceivableEventO8sendDatayACSS_tcACmF",
+            "mangledName": "$s9UDPSocket18UDPReceivableEventO8sendDatayACSS_tcACmF",
+            "moduleName": "UDPSocket",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9UDPSocket18UDPReceivableEventO",
+        "mangledName": "$s9UDPSocket18UDPReceivableEventO",
+        "moduleName": "UDPSocket",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UDPSendableCommand",
+        "printedName": "UDPSendableCommand",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "subscriptionData",
+            "printedName": "subscriptionData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UDPSocket.UDPSendableCommand.Type) -> UDPSocket.UDPSendableCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UDPSendableCommand",
+                    "printedName": "UDPSocket.UDPSendableCommand",
+                    "usr": "s:9UDPSocket18UDPSendableCommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UDPSocket.UDPSendableCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UDPSendableCommand",
+                        "printedName": "UDPSocket.UDPSendableCommand",
+                        "usr": "s:9UDPSocket18UDPSendableCommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9UDPSocket18UDPSendableCommandO16subscriptionDatayA2CmF",
+            "mangledName": "$s9UDPSocket18UDPSendableCommandO16subscriptionDatayA2CmF",
+            "moduleName": "UDPSocket",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cancelData",
+            "printedName": "cancelData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UDPSocket.UDPSendableCommand.Type) -> UDPSocket.UDPSendableCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UDPSendableCommand",
+                    "printedName": "UDPSocket.UDPSendableCommand",
+                    "usr": "s:9UDPSocket18UDPSendableCommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UDPSocket.UDPSendableCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UDPSendableCommand",
+                        "printedName": "UDPSocket.UDPSendableCommand",
+                        "usr": "s:9UDPSocket18UDPSendableCommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9UDPSocket18UDPSendableCommandO10cancelDatayA2CmF",
+            "mangledName": "$s9UDPSocket18UDPSendableCommandO10cancelDatayA2CmF",
+            "moduleName": "UDPSocket",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UDPSocket.UDPSendableCommand?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UDPSendableCommand",
+                    "printedName": "UDPSocket.UDPSendableCommand",
+                    "usr": "s:9UDPSocket18UDPSendableCommandO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9UDPSocket18UDPSendableCommandO8rawValueACSgSS_tcfc",
+            "mangledName": "$s9UDPSocket18UDPSendableCommandO8rawValueACSgSS_tcfc",
+            "moduleName": "UDPSocket",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9UDPSocket18UDPSendableCommandO8rawValueSSvp",
+            "mangledName": "$s9UDPSocket18UDPSendableCommandO8rawValueSSvp",
+            "moduleName": "UDPSocket",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9UDPSocket18UDPSendableCommandO8rawValueSSvg",
+                "mangledName": "$s9UDPSocket18UDPSendableCommandO8rawValueSSvg",
+                "moduleName": "UDPSocket",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9UDPSocket18UDPSendableCommandO",
+        "mangledName": "$s9UDPSocket18UDPSendableCommandO",
+        "moduleName": "UDPSocket",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jin\/Desktop\/UDPSocket\/Sources\/UDPSocket\/UDPClient.swift",
+      "kind": "Array",
+      "offset": 2720,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jin\/Desktop\/UDPSocket\/Sources\/UDPSocket\/UDPConnectionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 514,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/jin\/Desktop\/UDPSocket\/Sources\/UDPSocket\/UDPConnectionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 573,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jin\/Desktop\/UDPSocket\/Sources\/UDPSocket\/UDPConnectionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 632,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/jin\/Desktop\/UDPSocket\/Sources\/UDPSocket\/UDPConnectionManager.swift",
+      "kind": "Dictionary",
+      "offset": 1104,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jin\/Desktop\/UDPSocket\/Sources\/UDPSocket\/UDPMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 294,
+      "length": 6,
+      "value": "\"auth\""
+    },
+    {
+      "filePath": "\/Users\/jin\/Desktop\/UDPSocket\/Sources\/UDPSocket\/UDPMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 335,
+      "length": 6,
+      "value": "\"init\""
+    },
+    {
+      "filePath": "\/Users\/jin\/Desktop\/UDPSocket\/Sources\/UDPSocket\/UDPMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 376,
+      "length": 6,
+      "value": "\"ping\""
+    },
+    {
+      "filePath": "\/Users\/jin\/Desktop\/UDPSocket\/Sources\/UDPSocket\/UDPMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 417,
+      "length": 18,
+      "value": "\"subscriptionData\""
+    },
+    {
+      "filePath": "\/Users\/jin\/Desktop\/UDPSocket\/Sources\/UDPSocket\/UDPMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 470,
+      "length": 12,
+      "value": "\"cancelData\""
+    },
+    {
+      "filePath": "\/Users\/jin\/Desktop\/UDPSocket\/Sources\/UDPSocket\/UDPMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 517,
+      "length": 10,
+      "value": "\"sendData\""
+    },
+    {
+      "filePath": "\/Users\/jin\/Desktop\/UDPSocket\/Sources\/UDPSocket\/UDPMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 562,
+      "length": 5,
+      "value": "\"ack\""
+    },
+    {
+      "filePath": "\/Users\/jin\/Desktop\/UDPSocket\/Sources\/UDPSocket\/UDPTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 670,
+      "length": 18,
+      "value": "\"subscriptionData\""
+    },
+    {
+      "filePath": "\/Users\/jin\/Desktop\/UDPSocket\/Sources\/UDPSocket\/UDPTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 750,
+      "length": 12,
+      "value": "\"cancelData\""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -module-name UDPSocket -package-name udpsocket
+import Foundation
+import Network
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @available(iOS 12.0, macOS 10.14, tvOS 12.0, watchOS 5.0, *)
+@_Concurrency.MainActor final public class UDPClient {
+  @_Concurrency.MainActor public static var shared: UDPSocket.UDPClient? {
+    get
+  }
+  @discardableResult
+  @_Concurrency.MainActor public static func configure(host: Swift.String, port: Swift.UInt16, account: Swift.String) -> UDPSocket.UDPClient
+  @_Concurrency.MainActor final public func connect()
+  @_Concurrency.MainActor final public func disconnect()
+  @_Concurrency.MainActor final public func subscribe(handler: @escaping @_Concurrency.MainActor @Sendable (UDPSocket.UDPReceivableEvent) -> Swift.Void)
+  @_Concurrency.MainActor final public func removeAllSubscribers()
+  @_Concurrency.MainActor final public func send(_ command: UDPSocket.UDPSendableCommand, cmdDetail: Swift.String)
+  @objc deinit
+}
+public enum UDPReceivableEvent : Swift.Sendable {
+  case connected
+  case disconnected
+  case reconnecting
+  case sendData(cmdDetail: Swift.String)
+}
+public enum UDPSendableCommand : Swift.String, Swift.Sendable {
+  case subscriptionData
+  case cancelData
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(iOS 12.0, macOS 10.14, tvOS 12.0, watchOS 5.0, *)
+extension UDPSocket.UDPClient : Swift.Sendable {}
+extension UDPSocket.UDPSendableCommand : Swift.Equatable {}
+extension UDPSocket.UDPSendableCommand : Swift.Hashable {}
+extension UDPSocket.UDPSendableCommand : Swift.RawRepresentable {}
